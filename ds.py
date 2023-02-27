@@ -20,6 +20,7 @@ def getYoutubeMusic(search):
             infos = ydl.extract_info(
                 url = videosSearch.result()['result'][0]['link']
             )
+            print(infos)
             data = {
                 'name': infos['title'],
                 'url': infos['url'],
