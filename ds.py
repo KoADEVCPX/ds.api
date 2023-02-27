@@ -27,4 +27,4 @@ def getYoutubeMusic(search):
             }
             return jsonify(data)
 
-app.run()
+app.run(port=5834, host='0.0.0.0')
